@@ -2,6 +2,7 @@ import React from 'react';
 import CarousalData from '../data/carousel-data';
 import RightArrow from '../images/rightarrow.png';
 import LeftArrow from '../images/leftarrow.png';
+import CardsCarousel from './CardsCarousel';
 
 class Carousel extends React.Component {
     constructor(props) {
@@ -64,7 +65,7 @@ class Carousel extends React.Component {
                     </div>
                 </div>
 
-
+                <CardsCarousel />
                
 
             </>
