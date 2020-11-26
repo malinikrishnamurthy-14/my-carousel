@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.heading{
+  letter-spacing: 4px;
+  font-size: larger;
+  color: black;
+  padding: 10px;
+  display: block;
+  margin-top: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-heading{
+  color: black;
+  margin-top: -1px;
+  letter-spacing: 5px;
+  font-size: x-large;
+  font-family: Helvetica;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.content-p{
+  color: rgb(20, 20, 20);
+  margin-top: -1px;
+  text-align: justify;
+  font-size: medium;
+  font-family: Helvetica;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.carousel-main-div{
+  border: 0.1px solid rgb(5, 26, 19);
+  box-shadow: 1px 2px 1px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row;
+  height: 300px;
+  padding: 12px;  
 }
 
-.App-link {
-  color: #61dafb;
+
+.carousel-child-div{
+  /* border:1px solid rebeccapurple; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-child-div:nth-of-type(odd){
+  width: 5%;
+}
+
+.carousel-child-div:nth-of-type(even){
+  width: 90%;
+}
+
+.carousel-content-div{
+  display: flex;
+  flex-flow: row;
+}
+
+.carousel-content-child-div:nth-of-type(odd){
+  width: 50%;
+  float: left;
+}
+
+.carousel-content-child-div:nth-of-type(even){
+  width: 50%;
+  float: right;
+  background-color: transparent;
+}
+
+.carousel-image {
+  width: 600px;
+  height: 300px;
+}
+
+.image{
+  margin-top: 120px;
 }
